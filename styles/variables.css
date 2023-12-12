@@ -1,1 +1,10 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+:root {
+--Inter-Variable: 'Inter';
+--PressStart2P-Regular: 'Press Start 2P';
+--themes-main-color: #000;
+--background-color: #FFF;
+--bg-image: url(../images/background.png);
+--color-like: #FF0000;
+--bg-gradient: #d3d3d3;
+}

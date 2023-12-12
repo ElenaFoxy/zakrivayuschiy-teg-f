@@ -17,4 +17,534 @@
 .page {
   min-inline-size: 320px;
   min-block-size: 100dvb;
+  max-width: 696px;
+  color: var(--themes-main-color, #000);
+  font-family: var(--Inter-Variable, monospace); /* ИСПРАВИТЬ ЗАПАСНОЙ ШРИФТ */
+  font-size: 18px;
+  font-style: normal;
+  line-height: 21px;
+  margin: 0px auto;
+  background-image: var(--bg-image);
+  /*background: repeating-linear-gradient(to right, #d3d3d3 0px 2px, transparent 2px 4px);
+  background: repeating-linear-gradient(to bottom, #d3d3d3 0px 2px, transparent 2px 4px);
+  background: linear-gradient(180deg, #E7E7E7 0%, #1A1A1A 100%); 
+  rgb(211 211 211 / 0)*/
+  background: repeating-linear-gradient(to right, var(--bg-gradient) 0px 2px, transparent 2px 4px),
+  repeating-linear-gradient(to bottom,var(--bg-gradient) 0px 2px, transparent 2px 4px),
+  linear-gradient(180deg, var(--bg-gradient-start) 0%, var(--bg-gradient-end) 100%);
+  background-position: center;
+  background-repeat: repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  /*font-variation-settings: 'wght' 400 var(--font_weight);*/
+}
+
+.header {
+  box-sizing: border-box;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ /* height: 100vh;
+  min-height: 668px;*/
+  padding-top: 102px;
+  padding-bottom: 104px;
+}
+
+.dialog-floppy {
+  width: 341px;
+  height: 195px;
+  border: 2px solid var(--themes-main-color, #000);
+  background: var(--background-color, #FFF);
+  color: var(--themes-main-color, #000);
+  font-family: var(--PressStart2P-Regular);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 21px */
+  text-transform: uppercase;
+  text-align: left;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.dialog-form {
+  display: flex;
+  text-align: left;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.dfloppy {
+  height: 39px;
+  width: 39px;
+}
+
+.dialog-text {
+  display: grid;
+  width: 257px;
+  grid-template-columns: auto auto;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 32px;
+}
+
+.dialog-button {
+  display: flex;
+  width: 257px;
+  height: 38px;
+  padding: 9px 17px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+  margin-top: 20px;
+}
+
+.rectangle {
+  border: 2px solid var(--themes-main-color, #000);
+  background: var(--background-color, #FFF);
+}
+
+.header_block {
+  width: 100%;
+  /*height:  clamp(323px, 50%, 364px);*/
+  max-width: 696px;
+  flex-shrink: 0;
+  color: var(--themes-main-color);
+  font-family: var(--PressStart2P-Regular);
+  text-align: center;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+  padding-bottom: 25px;
+  padding-top: clamp(7.5rem, 7.14797rem + 1.502vw, 8.5rem);
+}
+
+.header_title {
+  font-size: clamp(3.0625rem, 2.71047rem + 1.502vw, 4.0625rem);
+}
+
+.header_text {
+  margin-top: 20px;
+  font-size: clamp(0.875rem, 0.67695rem + 0.845vw, 1.4375rem);
+}
+
+.theme-menu__list {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  gap: 12px;
+  margin-top: 25px;
+}
+.header__theme-menu {
+  width: 84px;
+  margin: 0 auto;
+}
+
+.theme-menu__button {
+  position: relative;
+  float: left;
+}
+
+.theme-menu__button:disabled::before {
+  content: "▶";
+  position: absolute;
+  inline-size: 14px;
+  block-size: 13px;
+  left: -14px;
+  align-items: center;
+  justify-content: center;
+  animation: arrow 0.5s ease-in-out infinite;
+  aspect-ratio: 2/1;
+}
+
+@keyframes arrow {
+  0% {
+    left: -14px;
+  }
+  100% {
+    left: -10px;
+  }
+} 
+
+.theme-menu__button {
+  border: none;
+  background-color: transparent;
+  text-transform: uppercase;
+  text-align: left;
+  position: relative;
+}
+
+.theme-menu__button:focus {
+  outline: none;
+  opacity: 0.6;
+}
+
+.theme-menu__button:hover:after {
+  position: absolute;
+  content: '';
+  left: 0;
+  bottom: 0;
+  display: block;
+  width: 100%;
+  height: 1px;
+  background: var(--themes-main-color);
+}
+.theme-menu__button::after {
+  position: absolute;
+  content: '';
+  left: 0;
+  bottom: 0;
+  display: block;
+  height: 1px;
+  background: #000;
+  width: 0;
+  transition: 0.3s;
+}
+
+.main_article {
+  color: var(--themes-main-color, #000);
+  font-size: 0;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.article_title {
+  height: 100%;
+  align-self: stretch;
+  font-weight: 700;
+  font-size: 18px;
+  padding: 4px 10px 4px 10px;
+}
+
+.article_img {
+  inline-size: 100%;
+  block-size: 100%;
+  max-width: 696px;
+  max-height: 696px;
+  border-left: 2px solid var(--themes-main-color, #000);
+  border-right: 2px solid var(--themes-main-color, #000);
+}
+
+.image-container {
+  position: relative;
+}
+
+.label {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+ /* margin-inline-start:  clamp(-109px, 1cqw, -123px);
+  margin-block-start: 23px; */
+  opacity: 0.5;
+  font-family: var(--PressStart2P-Regular);
+  text-transform: uppercase;
+  mix-blend-mode: hard-light;
+  color: var(--themes-main-color, #000);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-shadow: 1px 1px var(--background-color);
+
+}
+
+@supports (-webkit-text-stroke: 1px var(--background-color)) {
+  .label {
+    -webkit-text-stroke: 1px var(--background-color);
+  }
+}
+
+.article_text {
+  height: 100%;
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 27px;
+  padding: 25px 29px 25px 25px;
+  line-height: 21px;
+}
+
+.main_block {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+/*
+.card__icon-button {
+  width: 27px;
+  height: 24px;
+
+}
+*/
+.buttons {
+  display: flex;
+  flex-direction: row;
+  align-self: flex-end;
+ /* gap: 12px;*/
+}
+
+/*По ховеру и в состоянии disabled кнопки становятся прозрачными, 
+нужное значение — 0.6. Как и все анимации на сайте, 
+изменение состояния должно быть плавным. 
+У этих состояний переход длится 0.3s с функцией времени ease. 
+Состояние disabled также должно делать кнопку неактивной для взаимодействия, 
+добиться этого поможет pointer-events: none;.*/
+.button {
+  font-family: var(--PressStart2P-Regular);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 90%; /* 12.6px */
+  border: 2px solid var(--themes-main-color, #000);
+  overflow: hidden;
+  position: relative;
+  transition: all 0.5s;
+  color: var(--themes-main-color);
+  background-color: var(--background-color);
+}
+
+.button:hover {
+  color: var(--background-color);
+  opacity: 0.6;
+}
+
+.button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--themes-main-color);
+  z-index: -1;
+}
+
+.button:hover::before {
+  z-index: 1;
+  animation: btn_fill 0.5s ease-in-out backwards;
+}
+
+@keyframes btn_fill {
+  0% {
+    transform: translateX(-100%) ;
+  }
+  100% {
+    transform: translateX(0);
+  }
+} 
+
+.button:disabled {
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+.button:enabled {
+  opacity: 1;
+}
+
+.button:focus {
+  outline: none;
+  box-shadow: 2px 2px 0 0 var(--themes-main-color);
+}
+
+.card__icon-button {
+  border: 2px solid transparent;
+  display: flex;
+  height: 38px;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--background-color);
+  transition: var(--background-color) 0.3s;
+}
+
+@keyframes like_outline {
+0% {
+  border-color: transparent;
+}
+100% {
+  border-color: var(--themes-main-color);
+}
+} 
+
+.card__icon-button:focus {
+  outline: none;
+}
+
+.card__icon-button:focus-visible {
+  animation: like_outline 0.3s ease both;
+}
+
+.card__icon-button:hover {
+  animation: like_outline 0.3s ease both;
+}
+
+.card__like-button {
+  display: flex;
+  width: 130px;
+  height: 38px;
+  padding: 9px 17px;
+  justify-content: center;
+  align-items: center;
+  align-self: flex-end;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 54px 34px 102px 35px;
+}
+
+.floppy {
+  position: relative;
+  /*mix-blend-mode: difference;*/
+  inline-size: 28px;
+  block-size: 28px;
+  color: var(--themes-main-color);
+  z-index: 10;
+}
+
+.footer-button:hover .svg_floppy {
+  fill: var(--background-color);
+}
+
+.button__text {
+  position: relative;
+  z-index: 5;
+}
+
+.footer-button {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+  width: 335px;
+  height: 51px;
+  margin: 54px 34px 102px 35px;
+}
+
+.like-icon {
+
+}
+/*
+.like-icon:hover {
+  animation-name: like_hover;
+  animation-duration: 0.3s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: none;
+}
+
+@keyframes like_hover {
+  from {
+    cy: 0%;
+    fill: none;
+    stroke: grey;
+  }
+  to {
+    cy: 50%;
+    fill: #9284D9;
+    stroke: white;
+  }
+}
+*/
+
+/*при наведении на сердечко, оно закрашивается*/
+.card__icon-button:hover .core {
+  fill: var(--themes-main-color);
+  transition: color 0.3s;
+}
+
+.core {
+  fill: var(--background-color);
+  transition: color 0.3s 0.33s;
+}
+
+.card__icon-button:hover .main-body {
+  fill: var(--themes-main-color);
+  transition: color 0.3s 0.05s;
+}
+
+.main-body {
+  fill: var(--background-color);
+  transition: color 0.3s;
+}
+
+/*При нажатии и удержании кнопки мышки сердцевина и основное тело сердца 
+закрашиваются основным цветом анимации — красным. 
+Контур не перекрашивается. */
+.card__icon-button:active .core {
+  fill: var(--color-like);
+  transition: color 0.3s;
+}
+
+.card__icon-button:active .main-body {
+  fill: var(--color-like);
+  transition: color 0.3s 0.05s;
+}
+
+.like-icon.is-liked .core {
+  fill: var(--color-like);
+  transition: color 0.3s;
+}
+
+.like-icon.is-liked .main-body {
+  fill: var(--color-like);
+  transition: color 0.3s 0.03s;
+}
+
+.like-icon.is-liked .contour {
+  fill: var(--color-like);
+  transition: color 0.3s 0.06s;
+}
+
+.like-icon.is-liked .heart {
+  transform-origin: center;
+  animation: is_liked_heart 0.3s 0.1s ease-in;
+}
+
+.like-icon.is-liked .sparks {
+  animation: is_liked_sparks 0.3s 0.3s ease-in;
+}
+
+/* масштабирование сердца*/
+@keyframes is_liked_heart {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+} 
+/* искры при нажатии*/
+@keyframes is_liked_sparks {
+  0% {
+    fill: transparent;
+  }
+  100% {
+    fill: var(--color-like);
+  }
+} 
+@media (width <= 375px) {
+  .footer-button {
+    flex-direction: column;
+    width: 306px;
+    height: 80px;
+    margin: 54px 34px 102px 35px;
+}
+  .label {
+    right: 11px;
+  }
 }
