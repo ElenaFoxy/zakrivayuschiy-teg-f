@@ -1,12 +1,14 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
 :root {
---Inter-Variable: 'Inter';
---PressStart2P-Regular: 'Press Start 2P';
---themes-main-color: #000;
---background-color: #FFF;
---bg-image: url(../images/background.png);
---color-like: #FF0000;
---bg-gradient: #d3d3d3;
---font-weight: 400;
---font-bold-weight: 700;
+    --Inter-Variable: 'Inter';
+    --PressStart2P-Regular: 'Press Start 2P';
+    --themes-main-color: #000;
+    --background-color: #FFF;
+    --bg-image: url(../images/background.png);
+    --bg-gradient: #d3d3d3;
+    --bg-gradient-start: #e7e7e7;
+    --bg-gradient-end: #1a1a1a;
+    --font-weight: 400;
+    --font-bold-weight: 700;
+    --color-like: #FF0000;
 }

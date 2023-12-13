@@ -6,8 +6,6 @@
 */
 
 :root.theme-light {
-    --Inter-Variable: 'Inter';
-    --PressStart2P-Regular: 'Press Start 2P';
     --themes-main-color: #000;
     --background-color: #FFF;
     --bg-image: url(../images/background.png);
@@ -19,8 +17,6 @@
   }
 
 :root.theme-dark {
-    --Inter-Variable: 'Inter';
-    --PressStart2P-Regular: 'Press Start 2P';
     --themes-main-color: #00CC14;
     --background-color: #000;
     --bg-image: url(../images/background_dark.png);
@@ -32,24 +28,36 @@
   }
 
   .page.theme_dark {
-    --Inter-Variable: 'Inter';
-    --PressStart2P-Regular: 'Press Start 2P';
     --themes-main-color: #00CC14;
     --background-color: #000;
+    --bg-image: url(../images/background_dark.png);
+    --bg-gradient: #000;
+    --bg-gradient-start: #007f0c;
+    --bg-gradient-end: #004306;
+    --font-weight: 465;
+    --font-bold-weight: 785;
   }
 
   .page.theme_light {
-    --Inter-Variable: 'Inter';
-    --PressStart2P-Regular: 'Press Start 2P';
     --themes-main-color: #000;
     --background-color: #FFF;
+    --bg-image: url(../images/background.png);
+    --bg-gradient: #d3d3d3;
+    --bg-gradient-start: #e7e7e7;
+    --bg-gradient-end: #1a1a1a;
+    --font-weight: 400;
+    --font-bold-weight: 700;
   }
 
   @media (prefers-color-scheme: light) {
     :root {
-        --Inter-Variable: 'Inter';
-        --PressStart2P-Regular: 'Press Start 2P';
-        --themes-main-color: #000;
-        --background-color: #FFF;
+      --themes-main-color: #000;
+      --background-color: #FFF;
+      --bg-image: url(../images/background.png);
+      --bg-gradient: #d3d3d3;
+      --bg-gradient-start: #e7e7e7;
+      --bg-gradient-end: #1a1a1a;
+      --font-weight: 400;
+      --font-bold-weight: 700;
     }
 }
