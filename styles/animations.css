@@ -15,32 +15,32 @@
 
 /*стрелка меню*/
 @keyframes arrow {
-    0% {
-      left: -14px;
-    }
-    100% {
-      left: -10px;
-    }
+  0% {
+    left: -14px;
   }
+  100% {
+    left: -10px;
+  }
+}
 
 /* масштабирование сердца*/
 @keyframes is_liked_heart {
-    0% {
-      transform: scale(1);
-    }
-    50% {
-      transform: scale(1.5);
-    }
-    100% {
-      transform: scale(1);
-    }
+  0% {
+    transform: scale(1);
   }
-  /* искры при нажатии*/
-  @keyframes is_liked_sparks {
-    0% {
-      fill: transparent;
-    }
-    100% {
-      fill: var(--color-like);
-    }
+  50% {
+    transform: scale(1.5);
   }
+  100% {
+    transform: scale(1);
+  }
+}
+/* искры при нажатии*/
+@keyframes is_liked_sparks {
+  0% {
+    fill: transparent;
+  }
+  100% {
+    fill: var(--color-like);
+  }
+}

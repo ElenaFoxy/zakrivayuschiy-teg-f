@@ -17,9 +17,6 @@
   <body class="page">
     <dialog id="dialog-floppy" class="dialog-floppy">
       <form method="dialog" class="dialog-form">
-        <!--<svg xmlns="https://www.w3.org/2000/svg" class="floppy" viewBox="0 0 39 39">
-          <use href="./svg/floppy-min.svg#floppy"></use>
-        </svg> -->
         <div class="dialog-text">
           <svg
             class="floppy"
@@ -28,14 +25,17 @@
             viewBox="0 0 39 39"
             xmlns="http://www.w3.org/2000/svg"
           >
-            <path
-              fill="CurrentColor"
-              d="M.5.5h3v3h-3zM.5 3.5h3v3h-3zM.5 6.5h3v3h-3zM.5 9.5h3v3h-3zM.5 12.5h3v3h-3zM.5 15.5h3v3h-3zM.5 18.5h3v3h-3zM.5 21.5h3v3h-3zM.5 24.5h3v3h-3zM.5 27.5h3v3h-3zM.5 30.5h3v3h-3zM.5 33.5h3v3h-3zM.5 36.5h3v3h-3zM33.5.5v3h-3v-3zM30.5.5v3h-3v-3zM27.5.5v3h-3v-3zM24.5.5v3h-3v-3zM21.5.5v3h-3v-3zM18.5.5v3h-3v-3zM15.5.5v3h-3v-3zM12.5.5v3h-3v-3zM9.5.5v3h-3v-3zM6.5.5v3h-3v-3zM36.5 3.5v3h-3v-3zM9.5 6.5v3h-3v-3zM9.5 3.5v3h-3v-3zM9.5 9.5v3h-3v-3zM30.5 6.5v3h-3v-3zM30.5 3.5v3h-3v-3zM30.5 9.5v3h-3v-3zM24.5 6.5v3h-3v-3zM24.5 3.5v3h-3v-3zM24.5 9.5v3h-3v-3zM30.5 12.5v3h-3v-3zM27.5 12.5v3h-3v-3zM24.5 12.5v3h-3v-3zM21.5 12.5v3h-3v-3zM18.5 12.5v3h-3v-3zM15.5 12.5v3h-3v-3zM12.5 12.5v3h-3v-3zM9.5 12.5v3h-3v-3zM33.5 21.5v3h-3v-3zM30.5 21.5v3h-3v-3zM27.5 21.5v3h-3v-3zM24.5 21.5v3h-3v-3zM21.5 21.5v3h-3v-3zM18.5 21.5v3h-3v-3zM15.5 21.5v3h-3v-3zM12.5 21.5v3h-3v-3zM9.5 21.5v3h-3v-3zM33.5 24.5v3h-3v-3zM9.5 24.5v3h-3v-3zM33.5 27.5v3h-3v-3zM9.5 27.5v3h-3v-3zM33.5 30.5v3h-3v-3zM9.5 30.5v3h-3v-3zM9.5 33.5v3h-3v-3zM33.5 33.5v3h-3v-3zM36.5 36.5v3h-3v-3zM33.5 36.5v3h-3v-3zM30.5 36.5v3h-3v-3zM27.5 36.5v3h-3v-3zM24.5 36.5v3h-3v-3zM21.5 36.5v3h-3v-3zM18.5 36.5v3h-3v-3zM15.5 36.5v3h-3v-3zM12.5 36.5v3h-3v-3zM9.5 36.5v3h-3v-3zM6.5 36.5v3h-3v-3zM39.5 39.5h-3v-3h3zM39.5 36.5h-3v-3h3zM39.5 33.5h-3v-3h3zM39.5 30.5h-3v-3h3zM39.5 27.5h-3v-3h3zM39.5 24.5h-3v-3h3zM39.5 21.5h-3v-3h3zM39.5 18.5h-3v-3h3zM39.5 15.5h-3v-3h3zM39.5 12.5h-3v-3h3zM39.5 9.5h-3v-3h3z"
-            />
+            <use href="./svg/floppy-min.svg#floppy"></use>
           </svg>
           <p class="dialog-title">Вставьте дискету, чтобы продолжить</p>
         </div>
-        <button class="button dialog-button" type="button" onclick="window['dialog-floppy'].close()"><span class="button__text">ok</span></button>
+        <button
+          class="button dialog-button"
+          type="button"
+          onclick="window['dialog-floppy'].close()"
+        >
+          <span class="button__text">ok</span>
+        </button>
       </form>
     </dialog>
     <header class="header">
@@ -100,7 +100,11 @@
             </p>
             <p>Место для ваших воспоминаний о начале обучения.</p>
             <div class="buttons">
-              <button class="card__icon-button" aria-labelledby="card__like-1" type="button">
+              <button
+                class="card__icon-button"
+                aria-labelledby="card__like-1"
+                type="button"
+              >
                 <svg
                   class="like-icon"
                   width="39"
@@ -133,7 +137,11 @@
                   </g>
                 </svg>
               </button>
-              <button class="button card__like-button" id="card__like-1" type="button">
+              <button
+                class="button card__like-button"
+                id="card__like-1"
+                type="button"
+              >
                 <span class="button__text">Like</span>
               </button>
             </div>
@@ -160,7 +168,11 @@
             </p>
             <p>Место для ваших воспоминаний о начале первого спринта.</p>
             <div class="buttons">
-              <button class="card__icon-button" aria-labelledby="card__like-2" type="button">
+              <button
+                class="card__icon-button"
+                aria-labelledby="card__like-2"
+                type="button"
+              >
                 <svg
                   class="like-icon"
                   width="39"
@@ -193,7 +205,11 @@
                   </g>
                 </svg>
               </button>
-              <button class="button card__like-button" id="card__like-2" type="button">
+              <button
+                class="button card__like-button"
+                id="card__like-2"
+                type="button"
+              >
                 <span class="button__text">Like</span>
               </button>
             </div>
@@ -220,7 +236,11 @@
             </p>
             <p>Место для ваших воспоминаний об окончании первого спринта.</p>
             <div class="buttons">
-              <button class="card__icon-button"  aria-labelledby="card__like-3" type="button">
+              <button
+                class="card__icon-button"
+                aria-labelledby="card__like-3"
+                type="button"
+              >
                 <svg
                   class="like-icon"
                   width="39"
@@ -253,7 +273,11 @@
                   </g>
                 </svg>
               </button>
-              <button class="button card__like-button" id="card__like-3" type="button">
+              <button
+                class="button card__like-button"
+                id="card__like-3"
+                type="button"
+              >
                 <span class="button__text">Like</span>
               </button>
             </div>
@@ -280,7 +304,11 @@
             </p>
             <p>Место для ваших воспоминаний о начале второго спринта.</p>
             <div class="buttons">
-              <button class="card__icon-button"  aria-labelledby="card__like-4" type="button">
+              <button
+                class="card__icon-button"
+                aria-labelledby="card__like-4"
+                type="button"
+              >
                 <svg
                   class="like-icon"
                   width="39"
@@ -313,7 +341,11 @@
                   </g>
                 </svg>
               </button>
-              <button class="button card__like-button" id="card__like-4" type="button">
+              <button
+                class="button card__like-button"
+                id="card__like-4"
+                type="button"
+              >
                 <span class="button__text">Like</span>
               </button>
             </div>
@@ -341,7 +373,11 @@
             </p>
             <p>Место для ваших воспоминаний об окончании второго спринта.</p>
             <div class="buttons">
-              <button class="card__icon-button"  aria-labelledby="card__like-5" type="button">
+              <button
+                class="card__icon-button"
+                aria-labelledby="card__like-5"
+                type="button"
+              >
                 <svg
                   class="like-icon"
                   width="39"
@@ -374,7 +410,11 @@
                   </g>
                 </svg>
               </button>
-              <button class="button card__like-button" id="card__like-5" type="button">
+              <button
+                class="button card__like-button"
+                id="card__like-5"
+                type="button"
+              >
                 <span class="button__text">Like</span>
               </button>
             </div>
@@ -399,7 +439,11 @@
             </p>
             <p>Место для ваших воспоминаний о начале третьего спринта.</p>
             <div class="buttons">
-              <button class="card__icon-button" aria-labelledby="card__like-6" type="button">
+              <button
+                class="card__icon-button"
+                aria-labelledby="card__like-6"
+                type="button"
+              >
                 <svg
                   class="like-icon"
                   width="39"
@@ -432,7 +476,11 @@
                   </g>
                 </svg>
               </button>
-              <button class="button card__like-button" id="card__like-6" type="button">
+              <button
+                class="button card__like-button"
+                id="card__like-6"
+                type="button"
+              >
                 <span class="button__text">Like</span>
               </button>
             </div>
@@ -461,7 +509,11 @@
             </p>
             <p>Место для ваших воспоминаний об окончании третьего спринта.</p>
             <div class="buttons">
-              <button class="card__icon-button" aria-labelledby="card__like-7" type="button">
+              <button
+                class="card__icon-button"
+                aria-labelledby="card__like-7"
+                type="button"
+              >
                 <svg
                   class="like-icon"
                   width="39"
@@ -494,7 +546,11 @@
                   </g>
                 </svg>
               </button>
-              <button class="button card__like-button" id="card__like-7" type="button">
+              <button
+                class="button card__like-button"
+                id="card__like-7"
+                type="button"
+              >
                 <span class="button__text">Like</span>
               </button>
             </div>
@@ -525,7 +581,11 @@
               в этой точке пути.
             </p>
             <div class="buttons">
-              <button class="card__icon-button"  aria-labelledby="card__like-8" type="button">
+              <button
+                class="card__icon-button"
+                aria-labelledby="card__like-8"
+                type="button"
+              >
                 <svg
                   class="like-icon"
                   width="39"
@@ -558,7 +618,11 @@
                   </g>
                 </svg>
               </button>
-              <button class="button card__like-button" id="card__like-8" type="button">
+              <button
+                class="button card__like-button"
+                id="card__like-8"
+                type="button"
+              >
                 <span class="button__text">Like</span>
               </button>
             </div>
@@ -573,12 +637,6 @@
         aria-controls="dialog-floppy"
         onclick="window['dialog-floppy'].showModal()"
       >
-     
-    <!--  <svg class="floppy" version="1.0" xmlns="http://www.w3.org/2000/svg"
-      width="39" height="39" viewBox="0 0 39 39"
-      preserveAspectRatio="xMidYMid meet">
-          <use xlink:href="./svg/floppy-min.svg#floppy">
-        </svg>-->
         <svg
           class="floppy"
           width="28"
@@ -586,11 +644,7 @@
           viewBox="0 0 28 28"
           xmlns="http://www.w3.org/2000/svg"
         >
-        <use href="./svg/floppy-min.svg#floppy"></use>
-      <!--   <path
-            fill="CurrentColor"
-            d="M.5.5h3v3h-3zM.5 3.5h3v3h-3zM.5 6.5h3v3h-3zM.5 9.5h3v3h-3zM.5 12.5h3v3h-3zM.5 15.5h3v3h-3zM.5 18.5h3v3h-3zM.5 21.5h3v3h-3zM.5 24.5h3v3h-3zM.5 27.5h3v3h-3zM.5 30.5h3v3h-3zM.5 33.5h3v3h-3zM.5 36.5h3v3h-3zM33.5.5v3h-3v-3zM30.5.5v3h-3v-3zM27.5.5v3h-3v-3zM24.5.5v3h-3v-3zM21.5.5v3h-3v-3zM18.5.5v3h-3v-3zM15.5.5v3h-3v-3zM12.5.5v3h-3v-3zM9.5.5v3h-3v-3zM6.5.5v3h-3v-3zM36.5 3.5v3h-3v-3zM9.5 6.5v3h-3v-3zM9.5 3.5v3h-3v-3zM9.5 9.5v3h-3v-3zM30.5 6.5v3h-3v-3zM30.5 3.5v3h-3v-3zM30.5 9.5v3h-3v-3zM24.5 6.5v3h-3v-3zM24.5 3.5v3h-3v-3zM24.5 9.5v3h-3v-3zM30.5 12.5v3h-3v-3zM27.5 12.5v3h-3v-3zM24.5 12.5v3h-3v-3zM21.5 12.5v3h-3v-3zM18.5 12.5v3h-3v-3zM15.5 12.5v3h-3v-3zM12.5 12.5v3h-3v-3zM9.5 12.5v3h-3v-3zM33.5 21.5v3h-3v-3zM30.5 21.5v3h-3v-3zM27.5 21.5v3h-3v-3zM24.5 21.5v3h-3v-3zM21.5 21.5v3h-3v-3zM18.5 21.5v3h-3v-3zM15.5 21.5v3h-3v-3zM12.5 21.5v3h-3v-3zM9.5 21.5v3h-3v-3zM33.5 24.5v3h-3v-3zM9.5 24.5v3h-3v-3zM33.5 27.5v3h-3v-3zM9.5 27.5v3h-3v-3zM33.5 30.5v3h-3v-3zM9.5 30.5v3h-3v-3zM9.5 33.5v3h-3v-3zM33.5 33.5v3h-3v-3zM36.5 36.5v3h-3v-3zM33.5 36.5v3h-3v-3zM30.5 36.5v3h-3v-3zM27.5 36.5v3h-3v-3zM24.5 36.5v3h-3v-3zM21.5 36.5v3h-3v-3zM18.5 36.5v3h-3v-3zM15.5 36.5v3h-3v-3zM12.5 36.5v3h-3v-3zM9.5 36.5v3h-3v-3zM6.5 36.5v3h-3v-3zM39.5 39.5h-3v-3h3zM39.5 36.5h-3v-3h3zM39.5 33.5h-3v-3h3zM39.5 30.5h-3v-3h3zM39.5 27.5h-3v-3h3zM39.5 24.5h-3v-3h3zM39.5 21.5h-3v-3h3zM39.5 18.5h-3v-3h3zM39.5 15.5h-3v-3h3zM39.5 12.5h-3v-3h3zM39.5 9.5h-3v-3h3z"
-          />-->
+          <use href="./svg/floppy-min.svg#floppy"></use>
         </svg>
         <span class="button__text"> Сохранить на память</span>
       </button>

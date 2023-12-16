@@ -4,6 +4,7 @@
   --accent-font: "PressStart2P";
   --themes-main-color: #000;
   --background-color: #fff;
+  --color-hover: var( --background-color);
   --bg-image: url(../images/background.png);
   --bg-gradient: #d3d3d3;
   --bg-gradient-start: #e7e7e7;

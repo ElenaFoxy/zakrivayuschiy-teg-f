@@ -72,7 +72,7 @@
 }
 
 .dialog-floppy::backdrop {
-  background: var (--themes-main-color, #000);
+  background: var(--themes-main-color, #000);
   opacity: 0.75;
 }
 
@@ -126,7 +126,11 @@
 }
 
 .header_title {
-  font-size: clamp(2.72222222222222rem, 2.40931rem + 1.502vw, 3.61111111111111rem);
+  font-size: clamp(
+    2.72222222222222rem,
+    2.40931rem + 1.502vw,
+    3.61111111111111rem
+  );
 }
 
 .header_text {
@@ -166,20 +170,20 @@
   text-transform: uppercase;
   text-align: left;
   position: relative;
-  transition: fill 0.3s easy;
+  transition: fill 0.3s ease;
   appearance: none;
   cursor: pointer;
 }
 
 .theme-menu__button:hover {
   opacity: 0.6;
-  transition: opacity 0.3s easy;
+  transition: opacity 0.3s ease;
 }
 
 .theme-menu__button:disabled {
   opacity: 0.6;
   pointer-events: none;
-  transition: opacity 0.3s easy;
+  transition: opacity 0.3s ease;
 }
 
 .theme-menu__button:focus {
@@ -196,7 +200,7 @@
   height: 1px;
   background: var(--themes-main-color);
   inline-size: 100%;
-  transform-origin: 0 0; 
+  transform-origin: 0 0;
   transform: scaleX(0);
   transition: transform 0.3s linear;
 }
@@ -282,11 +286,12 @@
   text-shadow: 0 0 1px var(--background-color);
 }
 
-@supports (-webkit-text-stroke: 1px var(--background-color)) or (text-stroke: 1px var(--background-color)) {
+@supports (-webkit-text-stroke: 1px var(--background-color)) or
+  (text-stroke: 1px var(--background-color)) {
   .label {
     -webkit-text-stroke: 1px var(--background-color);
-     text-stroke: 1px var(--background-color);
-     text-shadow: none;
+    text-stroke: 1px var(--background-color);
+    text-shadow: none;
   }
 }
 
@@ -330,7 +335,6 @@
   appearance: none;
   cursor: pointer;
   transition: box-shadow 0.3s linear;
-  mix-blend-mode: difference;
 }
 
 .button::before {
@@ -341,13 +345,13 @@
   width: 100%;
   height: 100%;
   background-color: var(--themes-main-color);
-  z-index: -1;
+  /*z-index: -1;*/
   transform: translateX(-100%);
   transition: transform 0.5s ease-in-out;
 }
 
 .button:hover::before {
-  z-index: 1;
+  /*z-index: 1;*/
   transform: translateX(0);
 }
 
@@ -367,7 +371,7 @@
   justify-content: center;
   align-items: center;
   background-color: var(--background-color);
-  transition: border-color 0.3s easy;
+  transition: border-color 0.3s ease;
   appearance: none;
   cursor: pointer;
   border-color: transparent;
@@ -402,18 +406,25 @@
 
 .floppy {
   position: relative;
-  inline-size: 28px;
-  block-size: 28px;
-  color: var(--themes-main-color);
-  z-index: 100;
+  color: var(--color-hover);
   mix-blend-mode: difference;
 }
 
+.footer .floppy {
+  inline-size: 28px;
+  block-size: 28px;
+}
+
+.dialog-form .floppy {
+  inline-size: 39px;
+  block-size: 39px;
+}
+
 .button__text {
-  color: var(--themes-main-color);
+  color: var(--color-hover);
   position: relative;
-  z-index: 15;
-  /*mix-blend-mode: difference;*/
+  z-index: 2;
+  mix-blend-mode: difference;
 }
 
 .footer-button {
@@ -478,18 +489,17 @@
 .like-icon.is-liked .heart {
   transform-origin: center;
   animation: is_liked_heart 0.3s 0.1s ease-in;
-  animation-iteration-count: 1; 
+  animation-iteration-count: 1;
   animation-direction: reverse;
 }
 
 .like-icon.is-liked .sparks {
   animation: is_liked_sparks 0.3s 0.3s ease-in;
-  animation-iteration-count: 1; 
+  animation-iteration-count: 1;
   animation-direction: reverse;
 }
 
 @media (width <= 375px) {
-
   .footer-button {
     flex-direction: column;
     inline-size: 306px;
