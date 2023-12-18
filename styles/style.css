@@ -72,7 +72,7 @@
 }
 
 .dialog-floppy::backdrop {
-  background: var(--themes-main-color, #000);
+  background-color: var(--themes-main-color, #000);
   opacity: 0.75;
 }
 
@@ -103,6 +103,7 @@
   align-items: center;
   gap: 10px;
   margin-top: 20px;
+  text-transform: uppercase;
 }
 
 .rectangle {
@@ -126,11 +127,7 @@
 }
 
 .header_title {
-  font-size: clamp(
-    2.72222222222222rem,
-    2.40931rem + 1.502vw,
-    3.61111111111111rem
-  );
+  font-size: clamp(min(50%, 49px), 2.7104rem + 1.5023vw, 65px);
 }
 
 .header_text {
@@ -160,7 +157,7 @@
   left: -14px;
   align-items: center;
   justify-content: center;
-  animation: arrow 0.5s reverse ease-in-out;
+  animation: arrow 0.5s reverse ease-in-out infinite;
   aspect-ratio: 2/1;
 }
 
@@ -170,20 +167,18 @@
   text-transform: uppercase;
   text-align: left;
   position: relative;
-  transition: fill 0.3s ease;
+  transition: opacity 0.3s ease;
   appearance: none;
   cursor: pointer;
 }
 
 .theme-menu__button:hover {
   opacity: 0.6;
-  transition: opacity 0.3s ease;
 }
 
 .theme-menu__button:disabled {
   opacity: 0.6;
   pointer-events: none;
-  transition: opacity 0.3s ease;
 }
 
 .theme-menu__button:focus {
@@ -202,13 +197,7 @@
   inline-size: 100%;
   transform-origin: 0 0;
   transform: scaleX(0);
-  transition: transform 0.3s linear;
-}
-
-.theme-menu__button:focus::after {
-  outline: none;
-  opacity: 0.6;
-  transform: scaleX(0);
+  transition: transform 0.3s ease;
 }
 
 .theme-menu__button:focus-visible::after {
@@ -334,7 +323,7 @@
   background-color: var(--background-color);
   appearance: none;
   cursor: pointer;
-  transition: box-shadow 0.3s linear;
+  transition: box-shadow 0.3s ease-in-out;
 }
 
 .button::before {
@@ -361,7 +350,6 @@
 
 .button:focus-visible {
   box-shadow: 2px 2px 0 0 var(--themes-main-color);
-  transition: box-shadow 0.3s linear;
 }
 
 .card__icon-button {
@@ -401,7 +389,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 54px 34px 102px 35px;
 }
 
 .floppy {
@@ -410,12 +397,12 @@
   mix-blend-mode: difference;
 }
 
-.footer .floppy {
+.footer-svg {
   inline-size: 28px;
   block-size: 28px;
 }
 
-.dialog-form .floppy {
+.dialog-svg {
   inline-size: 39px;
   block-size: 39px;
 }
@@ -436,12 +423,13 @@
   justify-content: center;
   inline-size: 335px;
   block-size: 51px;
-  margin: 54px 34px 102px 35px;
+  margin: 54px 180px 105px 181px;
 }
 
 /*при наведении на сердечко, оно закрашивается*/
 .like-icon:hover .core {
   fill: var(--themes-main-color);
+  transition: fill 0.3s linear;
 }
 
 .core {
@@ -449,13 +437,14 @@
   transition: fill 0.3s linear 0.03s;
 }
 
-.card__icon-button:hover .main-body {
+.like-icon:hover .main-body {
   fill: var(--themes-main-color);
+  transition: fill 0.3s linear 0.05s;
 }
 
 .main-body {
   fill: var(--background-color);
-  transition: fill 0.3s linear 0.05s;
+  transition: fill 0.3s linear;
 }
 
 /*При нажатии и удержании кнопки мышки сердцевина и основное тело сердца 
@@ -478,7 +467,7 @@
 
 .like-icon.is-liked .main-body {
   fill: var(--color-like);
-  transition: fill 0.3s linear 0.03s;
+  transition: fill 0.3s linear 0.05s;
 }
 
 .like-icon.is-liked .contour {
@@ -486,17 +475,18 @@
   transition: fill 0.3s linear 0.06s;
 }
 
+.like-icon .contour {
+  fill: var(--themes-main-color);
+  transition: fill 0.1s linear;
+}
+
 .like-icon.is-liked .heart {
   transform-origin: center;
-  animation: is_liked_heart 0.3s 0.1s ease-in;
-  animation-iteration-count: 1;
-  animation-direction: reverse;
+  animation: is_liked_heart 0.3s 0.1s ease-in 1 alternate;
 }
 
 .like-icon.is-liked .sparks {
-  animation: is_liked_sparks 0.3s 0.3s ease-in;
-  animation-iteration-count: 1;
-  animation-direction: reverse;
+  animation: is_liked_sparks 0.3s 0.3s ease-in 1 alternate;
 }
 
 @media (width <= 375px) {
@@ -504,6 +494,7 @@
     flex-direction: column;
     inline-size: 306px;
     block-size: 80px;
+    margin: 54px 34px 102px 35px;
   }
   .label {
     right: 11px;
