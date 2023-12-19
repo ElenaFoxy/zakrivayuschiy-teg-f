@@ -123,7 +123,7 @@
 }
 
 .header_title {
-  font-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
+  font-size: clamp(2.892rem, 1.8954rem + 4.983vw, 4.063rem);
 }
 
 .header_text {
@@ -491,9 +491,6 @@
 }
 
 @media (width <= 375px) {
-  .header_title {
-    font-size: 2.7104rem;
-  }
   .footer-button {
     flex-direction: column;
     inline-size: 306px;
