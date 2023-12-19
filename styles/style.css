@@ -120,7 +120,6 @@
   text-transform: uppercase;
   padding-bottom: 25px;
   padding-top: clamp(7.5rem, 7.14797rem + 1.502vw, 8.5rem);
-  overflow: hidden;
 }
 
 .header_title {
@@ -154,7 +153,7 @@
   left: -14px;
   align-items: center;
   justify-content: center;
-  animation: arrow 0.5s reverse ease-in-out infinite;
+  animation: arrow 0.5s alternate ease-in-out infinite;
   aspect-ratio: 2/1;
 }
 
@@ -320,7 +319,7 @@
   background-color: var(--background-color);
   appearance: none;
   cursor: pointer;
-  transition: box-shadow 0.3s ease-in-out;
+  transition: box-shadow 0.3s ease;
 }
 
 .button::before {
@@ -444,6 +443,11 @@
   transition: fill 0.3s linear;
 }
 
+.like-icon {
+  width: 39px;
+  height: 36px;
+}
+
 /*При нажатии и удержании кнопки мышки сердцевина и основное тело сердца 
 закрашиваются основным цветом анимации — красным. 
 Контур не перекрашивается. */
@@ -487,6 +491,9 @@
 }
 
 @media (width <= 375px) {
+  .header_title {
+    font-size: 2.7104rem;
+  }
   .footer-button {
     flex-direction: column;
     inline-size: 306px;
