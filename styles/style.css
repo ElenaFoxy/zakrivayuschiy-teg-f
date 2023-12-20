@@ -121,8 +121,8 @@
 }
 
 .header_title {
-  /*font-size: clamp(2.892rem, 1.8954rem + 4.983vw, 4.063rem);*/
-  font-size: clamp(2.7rem, 1.87rem + 4.9vw, 4.063rem);
+  font-size: clamp(2.8rem, 1.8rem + 4.983vw, 4.063rem);
+ /* font-size: clamp(2.892rem, 1.8954rem + 4.983vw, 4.063rem);*/
 }
 
 .header_text {
@@ -494,6 +494,9 @@
     inline-size: 306px;
     block-size: 80px;
     margin-bottom: 102px;
+  }
+  .dialog-floppy {
+    inline-size: 100%;
   }
 
   .label {
