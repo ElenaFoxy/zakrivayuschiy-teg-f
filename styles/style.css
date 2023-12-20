@@ -43,6 +43,7 @@
   background-size: cover;
   background-attachment: fixed;
   font-variation-settings: "wght" var(--font-weight);
+  /*outline: 1px solid red; */
 }
 
 .header {
@@ -213,7 +214,6 @@
 
 .article_img {
   inline-size: 100%;
-  block-size: 100%;
   max-width: 696px;
   max-height: 696px;
   object-fit: cover;
@@ -498,3 +498,4 @@
     right: 11px;
   }
 }
+
