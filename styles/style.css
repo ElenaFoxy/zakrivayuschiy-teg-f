@@ -52,15 +52,16 @@
 }
 
 .dialog-floppy {
+  inline-size: clamp(21.3253rem, 20.96047rem + 1.502vw, 22.3125rem);
+  padding-top: 31.5px;
   padding-bottom: 30px;
-  padding-left: 31.5px;
-  padding-right: 32.5px;
   border: 2px solid var(--themes-main-color, #000);
   background: var(--background-color, #fff);
   color: var(--themes-main-color, #000);
   font-family: var(--accent-font), fantasy;
   font-size: 14px;
   font-style: normal;
+  line-height: 150%;
   text-transform: uppercase;
   text-align: left;
   flex-direction: column;
@@ -88,18 +89,16 @@
   gap: 20px;
   align-items: center;
   justify-content: center;
-  margin-top: 32px;
 }
 
 .dialog-button {
   display: flex;
-  inline-size: 257px;
-  block-size: 38px;
+  inline-size: clamp(13.9375rem, 12.39695rem + 6.573vw, 18.3125rem);
   padding: 9px 17px;
   justify-content: center;
   align-items: center;
   gap: 10px;
-  margin-top: 20px;
+  margin-top: 30px;
   text-transform: uppercase;
 }
 
@@ -496,6 +495,7 @@
     block-size: 80px;
     margin-bottom: 102px;
   }
+
   .label {
     right: 11px;
   }
