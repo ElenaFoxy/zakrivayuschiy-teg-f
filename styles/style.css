@@ -47,6 +47,7 @@
 
 .header {
   position: relative;
+  min-inline-size: 320px;
   padding-top: 102px;
   padding-bottom: 104px;
 }
@@ -374,6 +375,7 @@
 }
 
 .footer {
+  min-inline-size: 320px;
   display: flex;
   flex-direction: column;
   justify-content: center;
