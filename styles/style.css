@@ -214,6 +214,7 @@
 
 .article_img {
   inline-size: 100%;
+  block-size: 100%;
   max-width: 696px;
   max-height: 696px;
   object-fit: cover;
@@ -416,7 +417,8 @@
   justify-content: center;
   inline-size: 335px;
   block-size: 51px;
-  margin: 54px 180px 105px 181px;
+  margin-bottom: 105px;
+  margin-top: 54px;
 }
 
 /*при наведении на сердечко, оно закрашивается*/
@@ -492,10 +494,9 @@
     flex-direction: column;
     inline-size: 306px;
     block-size: 80px;
-    margin: 54px 34px 102px 35px;
+    margin-bottom: 102px;
   }
   .label {
     right: 11px;
   }
 }
-
