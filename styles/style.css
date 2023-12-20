@@ -215,8 +215,6 @@
 .article_img {
   inline-size: 100%;
   block-size: 100%;
-  max-width: 696px;
-  max-height: 696px;
   object-fit: cover;
   object-position: center;
   display: block;
