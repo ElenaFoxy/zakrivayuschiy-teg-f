@@ -12,7 +12,6 @@
 
 Кроме этого, не меняйте HTML переключателя тем. Его разметка также гарантирует работу своего скрипта.
 */
-
 .page {
   min-inline-size: 320px;
   min-block-size: 100dvb;
@@ -47,7 +46,6 @@
 
 .header {
   position: relative;
-  min-inline-size: 320px;
   padding-top: 102px;
   padding-bottom: 104px;
 }
@@ -375,7 +373,6 @@
 }
 
 .footer {
-  min-inline-size: 320px;
   display: flex;
   flex-direction: column;
   justify-content: center;
