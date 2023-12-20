@@ -43,7 +43,6 @@
   background-size: cover;
   background-attachment: fixed;
   font-variation-settings: "wght" var(--font-weight);
-  /*outline: 1px solid red; */
 }
 
 .header {
@@ -53,8 +52,9 @@
 }
 
 .dialog-floppy {
-  inline-size: 341px;
   padding-bottom: 30px;
+  padding-left: 31.5px;
+  padding-right: 32.5px;
   border: 2px solid var(--themes-main-color, #000);
   background: var(--background-color, #fff);
   color: var(--themes-main-color, #000);
