@@ -121,9 +121,7 @@
 }
 
 .header_title {
-  /*font-size: clamp(2.8rem, 1.8rem + 4.983vw, 4.063rem);*/
-  font-size: clamp(3.065rem, 2.7132rem + 1.5008vw, 4.064rem);
- /* font-size: clamp(2.892rem, 1.8954rem + 4.983vw, 4.063rem);*/
+  font-size: clamp(2.8rem, 1.86rem + 4.983vw, 4.063rem);
 }
 
 .header_text {
@@ -250,8 +248,7 @@
 
 .image-container {
   position: relative;
-  border-left: 2px solid var(--themes-main-color, #000);
-  border-right: 2px solid var(--themes-main-color, #000);
+  border: 2px solid var(--themes-main-color, #000);
 }
 
 .label {
@@ -493,9 +490,6 @@
     inline-size: 306px;
     block-size: 80px;
     margin-bottom: 102px;
-  }
-  .header_title {
-    font-size: 20px;
   }
   .label {
     right: 11px;
